@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-5">
+    <div class="text-center">
+     <img src="{% static 'core/images/mypic.jpg' %}" alt="profilePic" 
+     class="img-thumbnail" width="250px" hight="250px">
+    </div>   
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h2 class="font-weight-bold st-font">Hello,</h2>
+   <div class="px-4" style="line-height:2rem;">
+     <p style="text-indent:100px;">i am <b class="text-warning">Prajesh Vaghani</b> having 5 year of full-stack web development
+     experience for global businesses, I offer the technical expertise you are seeking for your web 
+     developer position.</p>
+     <p>since earning my bachelor's degree in internet and web development
+     from<b class="text-warning"> shantilal shah eng college</b> , I have served as a web developer at <b class="text-warning"> info-tech Technology </b>, one 
+     of the biggest permier digital marketing and web development firm. in this position, I have led web development
+     for client in deverse industries including Technology, manufacturing, pharmaceutical, hospitality, retail 
+     and financial services.</p>
+     <p>lorem, ispum dolor sit amet consectetur adipisicing elit. Eveniet sapiente reiciendis numquam optio? enim 
+     eligendi quaeducimus ipsam consectetur dicta veritatis sunt. pariatur vel modi alias enum ducimus nam temporibus.
+     </p>
+   </div>
+     <div class="text-center">
+      <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+      <a href="{% url 'contact'%}" class="btn btn-outline-info my-3">Contect</a>
+     </div>
+    </div>
+</div>
+
+
+{% endblock content %}
